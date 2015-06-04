@@ -1,0 +1,21 @@
+.loginBlock {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    height: 275px;
+    width: 400px;
+    padding-left: 37px;
+    padding-top: 30px;
+}
+.submit {
+
+    padding-left: 45%;
+}
+body {
+
+    background-image: url("../res/PreventiveDentistryPreston.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
