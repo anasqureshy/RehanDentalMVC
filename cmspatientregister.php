@@ -29,7 +29,7 @@
 
     <div class="contentBody">
 
-        <div class="container orange lighten-4">
+        <div class="indigo lighten-5">
 
             <form class="col s6" method="post" action="Controllers/c_insertPatient.php">
                 <div class="row">
@@ -100,7 +100,7 @@
                         <label for="icon_Age">Age</label>
                     </div>
                     <div class="input-field col s4">
-                        <select class="browser-default orange lighten-5" name="gender">
+                        <select class="browser-default blue lighten-5" name="gender">
                             <option value="" disabled selected>Please Select Patient's Gender</option>
                             <option value="M">Male</option>
                             <option value="F">Female</option>
@@ -131,7 +131,6 @@
 
 
                         <button class="btn waves-effect waves-light" type="resets" name="action">Clear
-                            <i class="mdi-navigation-check right"></i>
                         </button> <!-- technicaly it must reset form -->
 
                     </div>

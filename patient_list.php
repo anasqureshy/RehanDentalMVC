@@ -9,17 +9,13 @@ $reg = array("134", "369", "94", "501", "200", "454", "892", "430", "416", "222"
 <?php include("joints/sidebar.php"); ?>
     <div class="contentBody">
         <div class="indigo lighten-5">
-
-            <ul class="pagination center-align">
-                <li class="disabled"><a href="#!"><i class="mdi-navigation-chevron-left"></i></a></li>
-                <li class="active"><a href="#!">1</a></li>
-                <li class="waves-effect"><a href="#!">2</a></li>
-                <li class="waves-effect"><a href="#!">3</a></li>
-                <li class="waves-effect"><a href="#!">4</a></li>
-                <li class="waves-effect"><a href="#!">5</a></li>
-                <li class="waves-effect"><a href="#!"><i class="mdi-navigation-chevron-right"></i></a></li>
-            </ul>
-            <br>
+            <div class="row override-row">
+                <div class="input-field col s3">
+                    <i class="mdi-editor-format-list-numbered prefix"></i>
+                    <input id="regnumber" type="text" name="regnumber" class="validate">
+                    <label for="regnumber">Search</label>
+                </div>
+            </div>
             <table class="bordered hoverable lime lighten-4">
                 <thead>
                 <tr>
@@ -45,7 +41,19 @@ $reg = array("134", "369", "94", "501", "200", "454", "892", "430", "416", "222"
 
                 ?>
                 </tbody>
+
             </table>
+            <div class="center">
+                <ul class="pagination">
+                    <li class="disabled"><a href="#!"><i class="mdi-navigation-chevron-left"></i></a></li>
+                    <li class="active"><a href="#!">1</a></li>
+                    <li class="waves-effect"><a href="#!">2</a></li>
+                    <li class="waves-effect"><a href="#!">3</a></li>
+                    <li class="waves-effect"><a href="#!">4</a></li>
+                    <li class="waves-effect"><a href="#!">5</a></li>
+                    <li class="waves-effect"><a href="#!"><i class="mdi-navigation-chevron-right"></i></a></li>
+                </ul>
+            </div>
         </div>
     </div>
 <?php include("joints/footer4views.php"); ?>
