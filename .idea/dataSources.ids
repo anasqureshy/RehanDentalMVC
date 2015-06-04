@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component name="dataSourceStorage">
+  <data-source name="MySQL - rehandental@localhost" uuid="763442d0-c65e-40a7-89af-a0daf7c977f5">
+    <database-info product="MySQL" version="5.6.21" jdbc-version="4.0" driver-name="MySQL Connector Java" driver-version="mysql-connector-java-5.1.35 ( Revision: 5fb9c5849535c13917c2cf9baaece6ef9693ef27 )">
+      <extra-name-characters>#@</extra-name-characters>
+      <identifier-quote-string>`</identifier-quote-string>
+    </database-info>
+    <case-sensitivity plain-identifiers="lower" quoted-identifiers="lower"/>
+    <schema name="" catalog="rehandental"/>
+    <table name="daysofweek" schema="" catalog="rehandental" type="TABLE">
+      <column name="monday" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4"/>
+      <column name="teusday" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4"/>
+      <column name="wednesday" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4"/>
+      <column name="thursday" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4"/>
+      <column name="friday" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4"/>
+      <column name="saturday" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4"/>
+      <column name="sunday" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4"/>
+      <column name="doctid" sqlType="INT" precision="10" scale="0" nullable="true" jdbcType="4"/>
+      <column name="dayid" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4" autoIncrement="true"/>
+      <primary-key name="PRIMARY" columns="dayid"/>
+      <foreign-key name="daysofweek_ibfk_1" columns="doctid" ref-table="doctors" ref-schema="" ref-catalog="rehandental" ref-columns="doctid" update-rule="3" delete-rule="3" deferrability="2"/>
+    </table>
+    <table name="doctors" schema="" catalog="rehandental" type="TABLE">
+      <column name="doctid" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4" autoIncrement="true"/>
+      <column name="name" sqlType="TEXT" precision="65535" scale="0" nullable="false" jdbcType="-1"/>
+      <column name="description" sqlType="TEXT" precision="65535" scale="0" nullable="false" jdbcType="-1"/>
+      <column name="slotgap" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4"/>
+      <column name="fhour" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4"/>
+      <column name="fminute" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4"/>
+      <column name="thour" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4"/>
+      <column name="tminute" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4"/>
+      <primary-key name="PRIMARY" columns="doctid"/>
+      <exported-key name="daysofweek_ibfk_1" table="daysofweek" schema="" catalog="rehandental" columns="doctid"/>
+    </table>
+    <table name="intranetuser" schema="" catalog="rehandental" type="TABLE">
+      <column name="email" sqlType="VARCHAR" precision="40" scale="0" nullable="false" jdbcType="12"/>
+      <column name="password" sqlType="VARCHAR" precision="500" scale="0" nullable="false" jdbcType="12"/>
+      <column name="type" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4"/>
+    </table>
+    <table name="patientmaster" schema="" catalog="rehandental" type="TABLE">
+      <column name="name" sqlType="VARCHAR" precision="50" scale="0" nullable="false" jdbcType="12"/>
+      <column name="parent" sqlType="VARCHAR" precision="50" scale="0" nullable="false" jdbcType="12"/>
+      <column name="homeaddress" sqlType="TEXT" precision="65535" scale="0" nullable="false" jdbcType="-1"/>
+      <column name="workaddress" sqlType="TEXT" precision="65535" scale="0" nullable="false" jdbcType="-1"/>
+      <column name="regnumber" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4"/>
+      <column name="age" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4"/>
+      <column name="mobilenumber" sqlType="VARCHAR" precision="20" scale="0" nullable="false" jdbcType="12"/>
+      <column name="phonenumber" sqlType="VARCHAR" precision="20" scale="0" nullable="false" jdbcType="12"/>
+      <column name="recordnumber" sqlType="VARCHAR" precision="10" scale="0" nullable="false" jdbcType="12"/>
+      <column name="occupation" sqlType="VARCHAR" precision="90" scale="0" nullable="false" jdbcType="12"/>
+      <column name="email" sqlType="VARCHAR" precision="80" scale="0" nullable="false" jdbcType="12"/>
+      <column name="gender" sqlType="VARCHAR" precision="6" scale="0" nullable="false" jdbcType="12"/>
+      <column name="patienthistory" sqlType="TEXT" precision="65535" scale="0" nullable="false" jdbcType="-1"/>
+      <column name="entrydate" sqlType="VARCHAR" precision="50" scale="0" nullable="false" jdbcType="12"/>
+      <index name="regnumber" unique="true" columns="regnumber,mobilenumber,phonenumber,recordnumber,email"/>
+    </table>
+  </data-source>
+</component>
