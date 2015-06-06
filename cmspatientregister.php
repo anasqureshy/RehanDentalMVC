@@ -31,7 +31,7 @@
 
         <div class="indigo lighten-5">
 
-            <form class="col s6" method="post" action="Controllers/c_insertPatient.php">
+
                 <div class="row">
                     <div class="input-field col s6">
                         <i class="mdi-editor-format-list-numbered prefix"></i>
@@ -48,8 +48,8 @@
                 <div class="row">
                     <div class="input-field col s6">
                         <i class="mdi-action-account-circle prefix"></i>
-                        <input id="icon_prefix" type="text" name="name" class="validate">
-                        <label for="icon_prefix">Name</label>
+                        <input id="icon_name" type="text" name="name" class="validate">
+                        <label for="icon_name">Name</label>
                     </div>
                     <div class="input-field col s6">
                         <i class="mdi-action-perm-identity prefix"></i>
@@ -100,7 +100,7 @@
                         <label for="icon_Age">Age</label>
                     </div>
                     <div class="input-field col s4">
-                        <select class="browser-default blue lighten-5" name="gender">
+                        <select class="browser-default blue lighten-5" name="gender" id="gender">
                             <option value="" disabled selected>Please Select Patient's Gender</option>
                             <option value="M">Male</option>
                             <option value="F">Female</option>
@@ -112,20 +112,21 @@
                 <div class="row">
                     <div class="input-field col s6">
                         <i class="mdi-communication-email prefix"></i>
-                        <input id="icon_email" type="text" name="email" class="validate">
+                        <input id="icon_email" type="text" name="email"class="validate">
                         <label for="icon_email">Email</label>
                     </div>
                 </div>
                 <div class="row">
                     <div class="input-field col s12">
                         <i class="mdi-action-receipt prefix"></i>
-                        <textarea id="icon_prefix2" class="materialize-textarea" name="patienthistory"></textarea>
+                        <textarea id="icon_prefix2" class="materialize-textarea"></textarea>
                         <label for="icon_prefix2">Patient History</label>
                     </div>
                 </div>
+
                 <div class="row">
                     <div class="input-field col s6">
-                        <button class="btn waves-effect waves-light" type="submit" name="insertPatient">Insert Patient
+                        <button class="btn waves-effect waves-light" id="submit" name="insertPatient">Insert Patient
                             <i class="mdi-navigation-check right"></i>
                         </button>
 
@@ -134,7 +135,6 @@
                         </button> <!-- technicaly it must reset form -->
 
                     </div>
-            </form>
 
         </div>
     </div>

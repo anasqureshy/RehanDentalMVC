@@ -10,7 +10,8 @@
     <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection">
     <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection">
     <link href="css/dashboard.css" type="text/css" rel="stylesheet" media="screen,projection">
-
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script type="text/javascript" src="js/newPatient.js"></script>
 
 </head>
 <body class="brown lighten-4">

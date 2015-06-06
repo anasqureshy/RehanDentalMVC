@@ -7,7 +7,7 @@
  */
 
 require_once('../Models/modelPatient.php');
-
+echo "hogya bhaee hogya!!s";
 if(isset($_POST['insertPatient'])) {
     //here we have to add patient..
     $patientDetail = new modelPatient();

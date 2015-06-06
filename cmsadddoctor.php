@@ -136,21 +136,6 @@
                         </div>
                     </li>
                 </ul>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
                 <div class="row">
                     <div class="input-field col s6">
                         <button class="btn waves-effect waves-light" type="submit" name="action">Submit
